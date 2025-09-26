@@ -1,0 +1,41 @@
+name: e_ehson_global
+description: E-Ehson Global v36 - Professional xayriya platformasi Flutter ilovasi.
+publish_to: 'none' # Bu ilovani pub.dev ga yuklamaslik uchun.
+
+version: 1.0.0+1 # Ilova versiyasi, v36 ga asosan o'zgartirilishi mumkin.
+
+environment:
+  sdk: '>=3.5.0 <4.0.0' # Dart SDK versiyasi, Flutter 3.24+ bilan mos keladi.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Quyidagi paketlar kodda ishlatilgan:
+  shared_preferences: ^2.3.2 # Ma'lumotlarni saqlash uchun (users, campaigns, donations).
+
+  # Boshqa paketlar kerak emas, chunki kodda faqat standart Dart/Flutter kutubxonalari (material, services, convert, math) ishlatilgan.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Quyidagi qism ilova ikonasi, fontlar va assetlar uchun.
+flutter:
+  uses-material-design: true # Material Design ikonalarini faollashtirish uchun.
+
+  # Fontlar: Kodda fontFamily: 'Roboto' ishlatilgan, lekin Roboto Flutterda standart font, shuning uchun qo'shimcha assetlar kerak emas.
+  # Agar maxsus Roboto font fayllari kerak bo'lsa, quyidagicha qo'shish mumkin (lekin kodda ko'rsatilmagan):
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
+
+  # Assetlar: Kodda rasm yoki boshqa fayllar uchun assetlar ishlatilmagan (faqat emoji va ikonalar), shuning uchun bo'sh.
+  # Agar kerak bo'lsa, quyidagicha qo'shish mumkin:
+  # assets:
+  #   - assets/images/
+
+# Ilova ikonasi: Standart Flutter ikonasi ishlatiladi. Maxsus ikonalar uchun flutter_launcher_icons paketidan foydalaning.
+# Masalan, dev_dependencies ga qo'shish va config qilish mumkin, lekin kodda ko'rsatilmagan.
